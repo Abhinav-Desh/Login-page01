@@ -123,7 +123,7 @@ body {
   background-color: white;
   margin: 20px auto;
   width: 30%; 
-  max-height: calc(100vh - 64px - 40px);
+  /* max-height: calc(100vh - 64px - 40px); */
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
@@ -155,7 +155,7 @@ form {
   width: 100%; 
 }
 
-.email, .pass {
+.email, .pass ,.name {
   border: 1px solid #ccc;
   height: 48px;
   padding: 12px;
@@ -164,7 +164,7 @@ form {
   transition: border-color 0.3s;
 }
 
-.email:focus, .pass:focus {
+.email:focus, .pass:focus , .name:focus{
   border-color: #0956b5;
   outline: none;
 }
@@ -247,13 +247,17 @@ button:hover {
     flex-direction: column;
   }
 
-  .left, .right {
+  .left{
+    display: none;
     width: 100%; 
     margin: 0; 
   }
 
   .right {
     padding: 20px; 
+    width: 100%;
+    margin: 0;
+    height: 90vh;
   }
 }
 
