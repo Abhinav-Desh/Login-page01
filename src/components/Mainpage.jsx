@@ -82,7 +82,7 @@ const Mainpage = () => {
                                 <img src={google} alt="Google" />
                                 <span>Sign in with Google</span>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>

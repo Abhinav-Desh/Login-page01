@@ -1,5 +1,7 @@
-import React from "react";
 
+
+import React from "react";
+import '../App.css';
 const agents = [
     {"id": 1, "agent_code": "AGT001", "first_name": "John", "last_name": "Doe", "gmail": "john.doe@gmail.com"},
     {"id": 2, "agent_code": "AGT002", "first_name": "Jane", "last_name": "Smith", "gmail": "jane.smith@gmail.com"},
@@ -33,14 +35,11 @@ const agents = [
     {"id": 30, "agent_code": "AGT030", "first_name": "Daniel", "last_name": "King", "gmail": "daniel.king@gmail.com"}
 ];
 
-
-
-
 const Table = () => {
     return (
-        <div>
+        <div className="table-container">
             <h2>Agent Table</h2>
-            <table>
+            <table id="data-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -65,4 +64,5 @@ const Table = () => {
         </div>
     );
 };
+
 export default Table;
